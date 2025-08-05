@@ -8,7 +8,9 @@ int fatorial(int n) {
     }
 }
 int main() {
-    int numero = 5;
+    int numero;
+    printf("Digite um numero inteiro positivo: ");
+    scanf("%d", &numero);
     printf("Fatorial de %d = %d\n", numero, fatorial(numero));
     return 0;
 }
