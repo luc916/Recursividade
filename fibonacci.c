@@ -5,9 +5,11 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 int main() {
-    int i;
-    printf("Sequência de Fibonacci (10 primeiros):\n");
-    for (i = 0; i < 10; i++) {
+    int i, n_termos;
+    printf("Digite um número positivo: ");
+    scanf("%d", &n_termos);
+    printf("Sequência de Fibonacci (%d primeiros):\n");
+    for (i = 0; i < n_termos; i++) {
         printf("%d ", fibonacci(i));
     }
     printf("\n");
